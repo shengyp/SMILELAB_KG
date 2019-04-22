@@ -1,0 +1,32 @@
+/*   Basis 136, 18, 110 */
+#nav {
+	border-bottom:2px solid rgba(136, 18, 110, 1);
+}
+
+#navleft  ul li a.act {
+	background:rgba(136, 18, 110, 0.43);
+}
+
+#navleft .toggleMenu,
+#navleft  ul li a:hover,
+#navleft  ul li a.act:hover,
+#navleft  ul li a.cur {
+	background-color:rgba(136, 18, 110, 1);
+}
+
+.box_header {
+	background:rgba(136, 18, 110, 0.43);
+	background:rgba(136, 18, 110, 1);
+}
+
+.box_content dl.special_format dt.ym-g33 {
+	background-image:url(../../static/pink/bg_dl_pink.gif);
+}
+
+/*.ym-hlist {
+	background:rgba(136, 18, 110, 0.9);
+}
+
+.ym-hlist ul li:hover ul li a:hover {
+	background:rgba(136, 18, 110, 1);
+	}*/

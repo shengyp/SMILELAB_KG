@@ -1,0 +1,33 @@
+span.coding { font-family: monospace; font-size: 1.1em;}
+span.note {background: #dfd; padding: 1em; border-top: 1px #bdb dotted; border-bottom: 1px #bdb dotted;}
+span.important {background: #ffd; padding: 1em; border-top: 1px #ddb dotted; border-bottom: 1px #ddb dotted;}
+span.warning {background: #fdd; padding: 1em; border-top: 1px #dbb dotted; border-bottom: 1px #dbb dotted;}
+
+p.coding { font-family: monospace; font-size: 1.1em;}
+p.note {background: #dfd; padding: 1em; border-top: 1px #bdb dotted; border-bottom: 1px #bdb dotted;}
+p.important {background: #ffd; padding: 1em; border-top: 1px #ddb dotted; border-bottom: 1px #ddb dotted;}
+p.warning {background: #fdd; padding: 1em; border-top: 1px #dbb dotted; border-bottom: 1px #dbb dotted;}
+p.float_left { float: left; display:inline; margin-right: 1em; margin-bottom: 0.15em;}
+p.float_right { float: right; display:inline; margin-left: 1em; margin-bottom: 0.15em;}
+p.center { text-align:center; margin: 0.5em auto}
+
+p.autocolumns { -moz-column-width: 14em; -webkit-column-width: 14em; column-width: 14em; -moz-column-gap: 2em; -webkit-column-gap: 2em; column-gap: 2em; }
+ul.autocolumns { list-style-type: none; -moz-column-width: 14em; -webkit-column-width: 14em; column-width: 14em; -moz-column-gap: 2em; -webkit-column-gap: 2em; column-gap: 2em; }
+ 
+/* these are for showing alignment in RTE on the backend */
+.align-left { text-align: left; }
+.align-center { text-align: center; }
+.align-right { text-align: right; }
+.align-justify { text-align: justify; }
+
+/* RTE_ckeditor */
+.text-left { text-align: left; }
+.text-center { text-align: center; }
+.text-right { text-align: right; }
+.text-justify { text-align: justify; }
+
+
+/* People A-Z */
+p.filter_abc {background:none;}
+span.abc_letter {background:none; padding-right:10px;}
+span.act {background:none;}

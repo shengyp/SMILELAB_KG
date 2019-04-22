@@ -1,0 +1,531 @@
+#tx-solr-search-functions {
+	position: relative;
+	float: left;
+	width: 270px;
+}
+
+#tx-solr-search {
+	position:relative;
+	margin:0 0 0 290px;
+	background-color:#fff;
+	padding-bottom:20px;
+}
+
+#tx-solr-search ol {
+	margin:0;
+}
+
+.box_content > .tx-solr {
+    background-color: unset;
+}
+/* ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- */
+/* search form */
+
+.ym-col3 .tx-solr-search-form {
+	padding: 20px 20px 20px 20px;
+}
+.ym-col3 .tx-solr-search-found {
+	padding-bottom:20px;
+	margin: 0 20px 20px 20px;
+	border-bottom: 1px solid #cfcecf;
+}
+
+.ym-col3 .tx-solr-q {
+	width:60%;
+	padding: 0.55em 0.55em;
+	border:1px solid #e6e6e4;
+	background-color:#e6e6e4;
+	font-family:Arial, Helvetica, sans-serif;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	color:#656565;
+	-webkit-box-shadow: inset 0 0 4px #eee;
+	-moz-box-shadow: inset 0 0 4px #eee;
+	box-shadow: inset 0 0 4px #eee;
+	float:left;
+	margin-right:20px;
+}
+
+.ym-col3 .tx-solr-q:focus {
+		border:1px #b3aff5 solid;
+		background:#e6e6e4;
+}
+
+.ym-col3 .tx-solr-submit {
+		display: block;
+		white-space: nowrap;
+		color:#fff;
+		font-weight: bold;
+		border: 0px none;
+		background-image:url(../../script/jqtransformplugin/img/btn_left.gif);
+		background-repeat:no-repeat;
+		background-color: #ababa6;
+		width: 135px;
+		min-height:30px;
+		height:auto !important;
+		height:30px;
+		padding:6px 50px 7px 30px;
+		cursor: pointer;
+		margin:0;
+		overflow: visible; /* removes extra side spacing in IE */
+		text-decoration: none !important;
+		margin-bottom: 10px;
+		-webkit-box-shadow:none;
+		-moz-box-shadow:none;
+		box-shadow:none;
+	}
+
+/* ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- */
+/* pagination */
+
+/* #solr-pagination {
+	height: 20px;
+	padding-bottom:20px;
+	margin: 20px 20px 20px 20px;
+	border-bottom: 1px solid #cfcecf;
+} 
+
+#results-per-page {
+	float: left;
+}
+
+#results-per-page select {
+    margin-left: 5px;
+    line-height: unset;
+    padding: 0 5px 0 0;
+    margin-top: unset;
+    color: unset;
+    box-sizing: unset;
+    width: unset;
+    border: 1px solid rgb(192, 192, 192);
+    border-style: outset;
+    background-color: unset;
+}
+
+#solr-pagination {
+    clear:both;
+    content:"A";
+    display:block;
+    font-size:0.5%;
+    height:0;
+    visibility:hidden;
+} 
+
+
+#tx-solr-search #solr-pagination ul.pagination {
+	margin-top: 0px;
+	padding-top: 2px;
+}
+
+#tx-solr-search #solr-pagination ul.pagination li.last {
+	padding: 0 0 0 0
+}
+*/
+
+/* ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- */
+/* search functions */
+
+#tx-solr-search-functions div.secondaryContentSection {
+	padding: 0;
+	margin: 0px 0 20px 0px;
+	width: 100%;
+	background-color:#d1d1d1;
+	border-bottom:1px solid #a2a29e;
+}
+
+#tx-solr-search-functions div.secondaryContentSection ul.facets {
+	margin:0;
+	padding:0;
+	list-style-type:none;
+}
+
+/*#tx-solr-search-functions div.secondaryContentSection ul.facets li {
+	margin:0;
+	padding:0;
+}
+*/
+
+#tx-solr-search-functions .secondaryContentSection {
+}
+
+#tx-solr-search-functions .secondaryContentSection h1,
+#tx-solr-search-functions .secondaryContentSection h2,
+#tx-solr-search-functions .secondaryContentSection h3,
+#tx-solr-search-functions #tx-solr-facets-in-use h3 {
+	background-color:#a9a9a9;
+	font-family:Helvetica, Arial, sans-serif;
+	font-size:150%;
+	white-space:nowrap;
+	line-height: 0.8571em;
+	color:#fff;
+	padding:8px 0 7px 20px;
+	margin:0 !important;
+}
+
+/* ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- */
+/* faceting */
+
+#tx-solr-faceting .facets .facet-label {
+	padding: 3px 0px 3px 20px;
+}
+
+#tx-solr-faceting .facets .facet-option-list {
+	margin:0;
+	padding: 5px 0px 10px 20px;
+	margin:0;
+	padding:0;
+}
+
+#tx-solr-faceting .facets .facet-type-numericRange .facet-option-list {
+	width: 85%;
+}
+
+#tx-solr-faceting .facets .facet-label {
+	background-color: #d1d1d1;
+	color: #585858;
+	font-weight: bold;
+	margin:0;
+}
+
+#tx-solr-faceting .facets .facet-result-count {
+	color: #999;
+}
+
+#tx-solr-faceting .facets .dateselector {
+	margin-right: 5px;
+	width: 85px;
+}
+
+#tx-solr-facets-in-use ul {
+	margin:0;
+	padding:0;
+}
+
+#tx-solr-facets-in-use li {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	line-height:1em;
+	position:relative;
+	display:block;
+	padding:8px 20px;
+	background-color:rgba(0, 51, 93, 1);
+	border-top:1px solid #a2a29e;
+	font-size:1em;
+	font-weight:bold;
+	color:#fff;
+	text-decoration: none;
+}
+#tx-solr-facets-in-use li a {
+	color:#fff;
+	text-decoration:none;
+  }
+
+#tx-solr-facets-in-use .facets-remove-all {
+	margin-top: 10px;
+	padding:0;
+	background-color:none;
+	border-top:0px none;
+}
+#tx-solr-facets-in-use .facets-remove-all a {
+	display:block;
+	padding:8px 20px;
+	background:rgba(101, 101, 101, 0.16);
+	background-color:#d1d1d1;
+	border-top:1px solid #a2a29e;
+	font-size:1em;
+	font-weight:bold;
+	color:#585858;
+	text-decoration: none;
+}
+#tx-solr-facets-in-use .facets-remove-all a:hover {
+	background-color:rgba(0, 51, 93, 1);
+	color:#fff;
+}
+#tx-solr-faceting .facets .facet-option-list li.facet-option {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	line-height:1em;
+	position:relative;
+	display:block;
+	padding:8px 20px;
+	background:#d1d1d1;
+	border-top:1px solid #a2a29e;
+	font-size:1em;
+	font-weight:bold;
+	color:#585858;
+	text-decoration: none;
+}
+
+#tx-solr-faceting .facets .facet-option-list li.facet-option a {
+	text-decoration:none;
+}
+#tx-solr-faceting .facets .facet-option-list li.facet-option:hover,
+#tx-solr-faceting .facets .facet-option-list li.facet-option:hover a,
+#tx-solr-faceting .facets .facet-option-list li.facet-option a:hover {
+	background-color:rgba(0, 51, 93, 1);
+	color:#fff;
+}
+
+/* ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- */
+/* sorting */
+
+#tx-solr-sorting ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+#tx-solr-sorting li {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	line-height:1em;
+	position:relative;
+}
+
+#tx-solr-sorting li img {
+	display: block;
+	float:left;
+	margin-left:6px;
+	margin-top:11px;
+}
+
+#tx-solr-sorting li a {
+	display:block;
+	padding:8px 20px;
+	background-color:#d1d1d1;
+	border-top:1px solid #a2a29e;
+	font-size:1em;
+	font-weight:bold;
+	color:#585858;
+	text-decoration: none;
+  }
+
+#tx-solr-sorting li img + a {
+	background-color:rgba(0, 51, 93, 1);
+	color:#fff;
+  }
+
+#tx-solr-sorting li a:hover,
+#tx-solr-sorting li a.act {
+	background-color:rgba(0, 51, 93, 1);
+	color:#fff;
+  }
+
+/* ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- */
+/* results */
+
+#tx-solr-search .tx-solr-search-word {
+	font-weight: bold;
+}
+
+#tx-solr-search .tx-pagebrowse {
+	margin: 0;
+	text-align: right;
+}
+#tx-solr-search .tx-pagebrowse li.tx-pagebrowse-last {
+	padding: 0 20px 0 0
+}
+
+#tx-solr-search .results-list {
+	margin: 10px 20px 20px 20px;
+}
+
+#tx-solr-search .results-list li {
+	list-style: none inside;
+	margin-left: 0px;
+}
+
+.results-entry {
+	border-bottom: 1px solid #cfcecf;
+	margin-bottom: 20px;
+}
+
+.results-topic {
+	font-weight: bold;
+	margin-bottom: 5px;
+}
+
+.result-content {
+	width:100%;
+}
+
+.results-highlight {
+	background: #c1cad8;
+}
+
+/* ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- */
+/* relevance */
+
+.relevance {
+	height: 25px;
+	width:100%;
+}
+
+.relevance-label,
+.relevance-bar,
+.relevance-percent {
+	float: left;
+	margin-right: 3px;
+}
+
+.relevance-percent:after {
+    clear:left;
+    content:"A";
+    display:block;
+    font-size:0.5%;
+    height:0;
+    visibility:hidden;
+}
+
+.relevance-bar {
+	height: 20px;
+	padding-top: 3px;
+}
+
+.tx-solr-relevance-bar {
+	width: 100px;
+	height: 8px;
+	border: 1px solid #ccc;
+	font-size: 1px;
+	padding: 1px;
+}
+
+.tx-solr-relevance,
+.tx-solr-relevance-fill {
+	margin-right: 0px !important;
+	height: 8px;
+	padding: 0px;
+	float: left;
+}
+
+.tx-solr-relevance {
+	background-color: #00335d;
+}
+
+.tx-solr-relevance-fill {
+	background-color: #ccc;
+}
+
+/* ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- */
+/* frequent searches */
+
+#tx-solr-frequent-searches ul {
+	padding-right: 10px;
+}
+
+#tx-solr-frequent-searches li {
+	list-style-type: none;
+	margin-left: 10px;
+	display: inline;
+}
+
+.tx-solr-frequent-term-14 {
+	font-size: 14px;
+}
+.tx-solr-frequent-term-15 {
+	font-size: 15px;
+}
+.tx-solr-frequent-term-16 {
+	font-size: 16px;
+}
+.tx-solr-frequent-term-16 {
+	font-size: 16px;
+}
+.tx-solr-frequent-term-17 {
+	font-size: 17px;
+}
+.tx-solr-frequent-term-18 {
+	font-size: 18px;
+}
+.tx-solr-frequent-term-19 {
+	font-size: 19px;
+}
+.tx-solr-frequent-term-20 {
+	font-size: 20px;
+}
+.tx-solr-frequent-term-21 {
+	font-size: 21px;
+}
+.tx-solr-frequent-term-22 {
+	font-size: 22px;
+}
+.tx-solr-frequent-term-23 {
+	font-size: 23px;
+}
+.tx-solr-frequent-term-24 {
+	font-size: 24px;
+}
+.tx-solr-frequent-term-25 {
+	font-size: 25px;
+}
+.tx-solr-frequent-term-26 {
+	font-size: 26px;
+}
+.tx-solr-frequent-term-27 {
+	font-size: 27px;
+}
+.tx-solr-frequent-term-28 {
+	font-size: 28px;
+}
+.tx-solr-frequent-term-29 {
+	font-size: 29px;
+}
+.tx-solr-frequent-term-30 {
+	font-size: 30px;
+}
+.tx-solr-frequent-term-31 {
+	font-size: 31px;
+}
+.tx-solr-frequent-term-32 {
+	font-size: 32px;
+}
+.tx-solr-frequent-term-33 {
+	font-size: 33px;
+}
+.tx-solr-frequent-term-34 {
+	font-size: 34px;
+}
+
+/* --- new solr 7.X --- */
+.tx-solr-q {
+    float: left;
+}
+
+div#results-per-page {
+    margin-top: 1em;
+    border-top: 1px solid #cfcecf;    
+    text-align: right;
+}
+
+div#solr-pagination {
+    text-align: right;
+}
+
+#solr-pagination ul.pagination {
+    display: inline-block;
+}
+
+#solr-pagination ul.pagination li {
+  text-decoration:none;
+  text-align: right;
+  vertical-align:middle;
+  line-height: 24px;
+  display:block;
+  float:left;
+  /*margin-right:1.3px;*/
+  border-right: 1px solid white;
+}
+
+#solr-pagination ul.pagination li.active {
+    font-weight: bold;
+    font-size: 110%;
+}
+
+div.document-score-analysis {
+    display: none;
+}

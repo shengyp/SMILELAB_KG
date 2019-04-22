@@ -1,0 +1,284 @@
+
+.ist_publ_list {
+  font-family: serif;
+  font-size: 120%;
+}
+
+.ist_publ_list dd, 
+.ist_publ_list dl,
+.ist_publ_list li {
+  margin: 0 0 0 0;
+}
+
+ul.ist_publ_list {
+  margin: 0 0 0 0px;
+  list-style-type:none;
+}
+  
+
+.ist_publ_item dd.ist_publ_citation {
+  padding-bottom: 5px;
+}
+
+
+.ist_publ_list dd.ist_publ_citation span.Italic {
+  font-style:italic;
+}
+
+/*
+ * Begin Detail section
+*/
+
+.ist_publ_list dd.ist_publ_details {
+  padding: 0 20px 0 20px;
+  clear: both;
+}
+
+ul.ist_publ_list li:nth-child(odd) dd.ist_publ_details {
+  margin: 0 20px 0 0;
+  border-top: 3px dotted #ccccc5;
+}
+
+ul.ist_publ_list li:nth-child(even) dd.ist_publ_details {
+  margin: 0 20px 0 0;
+  /*border-top: 2px dotted #e3e3d9;*/
+  border-top: 3px dotted #dbdbd4;
+}
+
+
+
+.ist_publ_list .ist_publ_details div.ist_publ_details_citation{
+  display: none;
+}
+
+.ist_publ_list .ist_publ_details dl.ist_publ_details_content {
+}
+
+
+
+
+.ist_publ_details h2 {
+  font-weight: bold;
+  color: #656565;
+}
+  
+
+/* For the dynamic details */
+dl.ist_publ_item_dyn_detail {
+  margin-left:0;
+}
+dl.ist_publ_item_dyn_detail > dd {
+  margin-left:0;
+}
+
+.fancybox-inner div.box {
+  margin:0;
+}
+
+/*
+ * End Detail section
+*/
+
+/*
+ * Begin Link section
+*/
+
+
+/* "more"-Link */
+
+.ist_publ_list dd.ist_publ_morelink a{
+/*  background-image:url(/typo3conf/ext/ist_pubman/Resources/Public/Symbols/ist_arrow_small_left_grey.png); */
+  display: block;
+  width:100%;
+  height:100%;
+}
+
+.ist_publ_list dd.ist_publ_morelink a.lesslink{
+/*  background-image:url(/typo3conf/ext/ist_pubman/Resources/Public/Symbols/ist_arrow_small_down_grey.png); */
+  display: block;
+  width:100%;
+  height:100%;
+}
+
+
+.ist_publ_list dd.ist_publ_morelink{
+  padding: 12px 2px 0px 6px;
+  margin: 0 2px 0 0px;
+  display: block;
+  height: 11px;
+  width: 11px;
+  float:left;
+  
+}
+
+
+.ist_publ_list dd.ist_publ_morelink a span.linktext {
+/*  display:none; */
+}
+
+
+.ist_publ_list span.state {
+  cursor: hand;
+  cursor: pointer;
+}
+
+/* Link to Publisher with DOI Resolver */
+
+.ist_publ_list div.ist_publ_doilink a{
+/*  display: block;
+  width:100%;
+  height:100%; */
+/*  background:#898985 url('/typo3conf/ext/ist_pubman/Resources/Public/Symbols/ist_doi.png') no-repeat center; */
+}
+
+.ist_publ_list div.ist_publ_doilink{
+  float: left;
+  padding: 0px 5px 0px 5px;
+/*  float: right;
+  display: block;
+  height: 19px;
+  width: 27px;
+  margin: 0 10px 0 10px; */
+  /*background-color:#bfbfb9;*/
+  /*background: rgba(0,0,0,0.04);*/
+}
+  
+.ist_publ_list div.ist_publ_doilink span.linktext {
+/*  display:none; */
+}
+
+/* Backlink to repository with persistent URL */
+
+.ist_publ_list div.ist_publ_purelink a{
+/*  display: block;
+  width:100%;
+  height:100%; */
+/*  background:#898985 url('/typo3conf/ext/ist_pubman/Resources/Public/Symbols/ist_item.png') no-repeat center; */
+}
+
+.ist_publ_list div.ist_publ_purelink{
+  float: left;
+  padding: 0px 5px 0px 5px;
+/*  float: right;
+  display: block;
+  height: 19px;
+  width: 27px; */
+  /*background-color:#bfbfb9;*/
+  /*background: rgba(0,0,0,0.04);*/
+}
+
+.ist_publ_list div.ist_publ_purelink span.linktext {
+/*  display:none; */
+}
+
+/* Link to fulltext */
+
+.ist_publ_list div.ist_publ_link_to_ft a{
+/*  display: block;
+  width:100%;
+  height:100%; */
+/*  background:#898985 url('/typo3conf/ext/ist_pubman/Resources/Public/Symbols/ist_fulltext.png') no-repeat center; */
+}
+
+.ist_publ_list div.ist_publ_link_to_ft{
+  float: left;
+  padding: 0px 0px 0px 5px;
+/*  float:right;
+  display: block;
+  height: 19px;
+  width: 27px; */
+} 
+
+.ist_publ_list div.ist_publ_export_bibtex{
+  float: left;
+  padding: 0px 5px 0px 0px;
+}
+
+.ist_publ_list div.ist_publ_export_endnote{
+  float: left;
+  padding: 0px 5px 0px 5px;
+}
+
+.ist_publ_list div.ist_publ_link_to_ft span.linktext {
+/*  display:none; */
+}
+
+.ist_publ_list li {
+  padding: 3px 15px 3px 15px;
+}
+
+ul.ist_publ_list > li:nth-child(odd){
+}
+
+ul.ist_publ_list > li:nth-child(even){
+  background-color: #f3f3f3;
+}
+
+dl.ist_publ_item:before,
+dl.ist_publ_item:after {
+  content:"";
+  display:table;
+}
+
+dl.ist_publ_item:after {
+  clear:both;
+}
+
+.ist_publ_list dd.ist_publ_icons {
+/*  float:right;
+  padding:12px 12px 12px 12px; */
+}
+
+div.ist_publ_clear {
+  clear:both;
+}
+
+dl.ist_publ_details_content dt {
+  width: 4em;
+  float:left;
+  clear: left;
+}
+
+dl.ist_publ_details_content dd {
+  margin: 20px 0 20px 5em;
+}
+
+dl.ist_publ_details_content dd ul.autocol {
+list-style-type: none;
+-moz-column-width: 13em;
+-webkit-column-width: 13em;
+column-width: 13em;
+-moz-column-gap: 1em;
+-webkit-column-gap: 1em;
+column-gap: 1em;
+margin-left:0px;
+margin:0px;
+}
+
+dl.ist_publ_details_content dd ul.autocol li {
+text-align: center;
+color:white;
+}
+
+dl.ist_publ_details_content dd ul.autocol li a {
+color:white;
+width: 100%;
+height:100%;
+display: inline-block;
+background-color: #898985;
+margin-bottom:5px;
+text-decoration:none;
+line-height: 2em;
+font-family:sans;
+  font-size:90%;
+}
+
+dt.ist_publ_details_citation, dd.ist_publ_details_citation {
+display:none;
+}
+
+ul.ist_publ_list dl.ist_publ_details_content dd.ist_publ_details_abstract {
+  text-align:justify;
+}
+
+

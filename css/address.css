@@ -1,0 +1,234 @@
+
+/*.ym-cbox .box_header {
+  background:none;
+  background-color:none;
+}*/
+
+.ym-cbox .box_header h1.adress_list_header {
+  font-size:325%;
+  padding:7px 10px;
+  font-weight:bold;
+  float:left;
+  margin-bottom:10px;
+  background:rgba(0, 51, 93, 1);
+}
+
+.ym-cbox .box_header h1.people_list_header {
+  padding:8px 20px;
+  float:left;
+  margin-bottom:0;
+  background:rgba(0, 51, 93, 1);
+}
+
+/*.ym-cbox .box_header h1.adress_list_header {
+  font-size:325%;
+  font-weight:bold;
+}*/
+
+.tx-ttaddress-pi1 {
+  width:100%;
+}
+
+.adress_list_filter {
+  clear:left;
+}
+
+.adress_list_filter a.abc_letter,
+.adress_list_filter span.abc_letter {
+  display:inline-block;
+  float:left;
+  background:rgba(0, 51, 93, 1);
+  color:#fff;
+  width:1em;
+  line-height:30px;
+  padding:0 4px 0 5.3px;
+  border-right:1px solid #fff;
+  border-bottom:1px solid #fff;
+  text-align:center;
+  font-size:170%;
+}
+
+.adress_list_filter a {
+  color:#fff;
+  text-decoration:none;
+}
+
+.adress_list_filter a.act,
+.adress_list_filter span.act {
+  background-color:#173145;
+}
+
+.adress_list_filter span.clear {
+  clear:left;
+}
+
+ul.ttaddress_list_wrap {
+  background-color:#fff;
+  margin:0;
+  padding:0;
+  list-style-type:none;
+  clear:left;
+}
+
+ul.ttaddress_list_wrap li {
+  margin:0;
+  padding:0;
+  background-color:#ccccc5;
+}
+
+.tx-ttaddress-pi1 ul li:nth-child(even) { background-color:#b6b6ae; border-bottom:1px solid #b6b6ae; }
+.tx-ttaddress-pi1 ul li:nth-child(odd) { background-color:#ccccc5; border-bottom:1px solid #ccccc5; }
+
+
+
+dl.ttaddress_all_list {
+  border:0 none;
+  display:block;
+  font-size:1em;
+  line-height:1.5em;
+  margin: 0;
+}
+
+dl.ttaddress_all_list:after {
+    clear:both;
+    content:".";
+    display:block;
+    font-size:0;
+    height:0;
+}
+
+dl.ttaddress_all_list dd {
+  float: left;
+  margin: 0;
+  padding: 1%;
+  min-height: 40px;
+  height: auto !important;
+  height: 40px;
+}
+
+dl.ttaddress_all_list dd img {
+  margin-top:1px;
+}
+
+dd.title {
+  font-weight:bold;
+}
+
+dd.name {
+  width:30%;
+  color:#fff;
+  background-color:rgba(0,0,0,.2);
+}
+
+dd.email {
+  width:5%;
+  color:#fff;
+  background-color:rgba(0,0,0,.2);
+  text-align:center;
+}
+
+dd.info {
+  color:#fff;
+  width:5%;
+  background-color:rgba(0,0,0,.2);
+  text-align:center;
+}
+
+dd.department {
+  width:17%;
+}
+
+dd.phone {
+  width:21%;
+  border-left:1px solid #a2a29e;
+}
+
+dd.room {
+  width:8%;
+  border-left:1px solid #a2a29e;
+}
+
+
+/* table */
+
+table.ttaddress_list_wrap {
+  clear:left;
+}
+
+
+.tx-ttaddress-pi1 table tr:nth-child(even) { background-color:#b6b6ae; border-bottom:1px solid #b6b6ae; }
+.tx-ttaddress-pi1 table tr:nth-child(odd) { background-color:#ccccc5; border-bottom:1px solid #ccccc5; }
+
+
+tr.ttaddress_all_list {
+  border:0 none;
+  font-size:1em;
+  line-height:1.5em;
+  margin: 0;
+}
+
+tr.ttaddress_all_list td {
+  margin: 0;
+  padding: 0.7%;
+  vertical-align: middle;
+
+}
+
+
+tr.ttaddress_all_list td.email a,
+tr.ttaddress_all_list td.info a {
+  display:block;
+  line-height:0;
+}
+
+tr.ttaddress_all_list td a img {
+  max-width: none;
+}
+
+td.title, th.title {
+  font-weight:bold;
+}
+
+td.name, th.name {
+  width:32%;
+  color:#fff;
+  background-color:rgba(0,0,0,.2);
+  padding-left:20px !important;
+}
+
+td.email, th.email {
+  width:5%;
+  color:#fff;
+  background-color:rgba(0,0,0,.2);
+  text-align:center;
+}
+
+td.info, th.info {
+  color:#fff;
+  width:5%;
+  background-color:rgba(0,0,0,.2);
+  text-align:center;
+}
+
+td.department, th.department {
+  width:14%;
+}
+
+td.phone, th.phone {
+  width:18%;
+  border-left:1px solid #a2a29e;
+}
+
+td.room, th.room {
+  width:12%;
+  border-left:1px solid #a2a29e;
+}
+
+
+/* Simple address template */
+.tt_address_simple ul li.name {
+  list-style-type:none;
+  background-color: transparent;
+  border-bottom: none;
+}
+

@@ -1,0 +1,114 @@
+
+@media print {
+
+	/**
+	* @section basic layout preparation
+	*/
+
+	/* (en) change font size unit to [pt] - avoids problems with [px] in Gecko based browsers  	*/
+	/* (de) Wechsel der der Schriftgrößen-Maßheinheit zu [pt] - Probleme mit [px] in Gecko-Browsern vermeiden */
+	body {
+		font-size: 10pt !important;
+		padding: 0 5px;
+		color:#000000;
+	}
+  /* (de) Für den Druck nicht benötigte Container des Layouts abschalten */
+
+  #top_navhelp,
+  #search,
+  #topimage,
+  #nav,
+  .ym-col1,
+  #footer
+   { display:none; }
+  
+  #logo {
+  display:block;
+  position:relative !important;
+  margin:0;
+  padding:0;
+  top:0;
+  left:0;
+  }
+
+	/*------------------------------------------------------------------------------------------------------*/
+
+	/* (en) Avoid page breaks right after headings */
+	/* (de) Vermeidung von Seitenumbrüchen direkt nach einer Überschrift */
+  h1,h2,h3,h4,h5,h6 { page-break-after:avoid;color:#000000; }
+  h1 {font-size:140%;}
+  h2 {font-size:120%;}
+  h3 {font-size:110%;}
+  a {color:#000000;}
+
+	/*------------------------------------------------------------------------------------------------------*/
+ /* (de) (De)aktivierung der Contentspalten für den Ausdruck  */
+
+  .ym-col2, .ym-col3, .ym-cbox { float:none; width:100%; margin:0; padding:0; border:0; }
+  #main {
+  	padding-top:25px;
+  }
+  #breadcrumb {
+  	padding-bottom:25px;
+  }
+  .box {padding-bottom:20px;}
+
+	/* (en) optional output of acronyms and abbreviations*/
+	/* (de) optionale Ausgabe von Auszeichnung von Abkürzungen */
+
+	/*
+	abbr[title]:after,
+	acronym[title]:after {
+		content:'(' attr(title) ')';
+	}
+	*/
+
+	/*------------------------------------------------------------------------------------------------------*/
+
+	/* (en) optional URL output of hyperlinks in print layout */
+	/* (de) optionale Ausgabe der URLs von Hyperlinks */
+	/*
+	a[href]:after {
+		content:" <URL:"attr(href)">";
+		color:#444;
+		background:inherit;
+		font-style:italic;
+	}
+	*/
+
+	/* klappe alle accordions aus */
+	#main_inner .collapsible > div {display:block !important;}	
+	
+
+
+	/* publications */
+
+	.ist_publ_list dd.ist_publ_morelink a{
+		display: none;
+	}
+	.ist_publ_list dd.ist_publ_icons {
+		display: none;
+	}
+	dd.ist_publ_citation {
+		margin:0;
+	}
+
+	.ist_publ_list .ist_publ_details {
+		border:none !important;
+	}
+
+	.ist_publ_list .ist_publ_details_link,
+	.ist_publ_list .ist_publ_details_export {
+		display:none;
+	}
+
+	/* solr */
+
+	div#tx-solr-search-functions {
+		display:none;
+	}
+	div#tx-solr-search {
+		margin:0;
+	}
+
+}

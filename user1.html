@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <!-- 
+	This website is powered by TYPO3 - inspiring people to share!
+	TYPO3 is a free open source Content Management Framework initially created by Kasper Skaarhoj and licensed under GNU/GPL.
+	TYPO3 is copyright 1998-2019 of Kasper Skaarhoj. Extensions are copyright of their respective owners.
+	Information and contribution at https://typo3.org/
+
+    <link rel="shortcut icon" href="https://www.mpi-inf.mpg.de/fileadmin/inf/res/static/favicon.ico"
+        type="image/x-icon">
+    <title>Max-Planck-Institut für Informatik: WebChild1</title>
+    <meta name="generator" content="TYPO3 CMS">
+    <link rel="stylesheet" type="text/css"
+        href="https://www.mpi-inf.mpg.de/typo3temp/assets/css/d42b6e1bdf.css?1503646928" media="all">
+    <link rel="stylesheet" type="text/css"
+        href="https://www.mpi-inf.mpg.de/typo3conf/ext/cl_jquery_fancybox/Resources/Public/CSS/jquery.fancybox.css?1503326226"
+        media="screen">
+    <link rel="stylesheet" type="text/css"
+        href="https://www.mpi-inf.mpg.de/fileadmin/inf/res/css/core/base.css?1503318035" media="all">
+    <link rel="stylesheet" type="text/css"
+        href="https://www.mpi-inf.mpg.de/fileadmin/inf/res/css/navigation/dropdown.css?1503318035" media="all">
+    <link rel="stylesheet" type="text/css"
+        href="https://www.mpi-inf.mpg.de/fileadmin/inf/res/css/screen/typography.css?1503318035" media="all">
+    <link rel="stylesheet" type="text/css"
+        href="https://www.mpi-inf.mpg.de/fileadmin/inf/res/css/screen/standard-page.css?1504167409" media="all">
+    <link rel="stylesheet" type="text/css"
+        href="https://www.mpi-inf.mpg.de/fileadmin/inf/res/css/screen/grey.css?1503318035" media="all">
+    <link rel="stylesheet" type="text/css"
+        href="https://www.mpi-inf.mpg.de/fileadmin/inf/res/css/navigation/navleft_responsive.css?1503318035"
+        media="all">
+    <link rel="stylesheet" type="text/css"
+        href="https://www.mpi-inf.mpg.de/fileadmin/inf/res/css/screen/address.css?1503318035" media="all">
+    <link rel="stylesheet" type="text/css"
+        href="https://www.mpi-inf.mpg.de/fileadmin/inf/sys/css/screen/pink.css?1372661188" media="all">
+    <link rel="stylesheet" type="text/css"
+        href="https://www.mpi-inf.mpg.de/fileadmin/inf/res/css/screen/publications.css?1503318035" media="all">
+    <link rel="stylesheet" type="text/css"
+        href="https://www.mpi-inf.mpg.de/fileadmin/inf/res/css/screen/publications2.css?1458222249" media="all">
+    <link rel="stylesheet" type="text/css"
+        href="https://www.mpi-inf.mpg.de/fileadmin/inf/res/css/screen/rte.css?1503670000" media="all">
+    <link rel="stylesheet" type="text/css"
+        href="https://www.mpi-inf.mpg.de/fileadmin/inf/res/css/screen/misc.css?1504167409" media="all">
+    <link rel="stylesheet" type="text/css"
+        href="https://www.mpi-inf.mpg.de/fileadmin/inf/res/css/forms/forms.css?1503318035" media="all">
+    <link rel="stylesheet" type="text/css"
+        href="https://www.mpi-inf.mpg.de/fileadmin/inf/res/css/screen/ist_pink.css?1503318035" media="all">
+    <link rel="stylesheet" type="text/css"
+        href="https://www.mpi-inf.mpg.de/fileadmin/inf/res/css/screen/solr_results.css?1503578095" media="all">
+    <link rel="stylesheet" type="text/css"
+        href="https://www.mpi-inf.mpg.de/fileadmin/inf/res/css/print/print.css?1503318035" media="print">
+    <link rel="stylesheet" type="text/css"
+        href="https://www.mpi-inf.mpg.de/fileadmin/inf/res/css/screen/d5_database.css" media="all">
+    <script src="https://www.mpi-inf.mpg.de/fileadmin/inf/ist/js/jquery-1.10.1.min.js?1371190476"
+        type="text/javascript"></script>
+    <script src="https://www.mpi-inf.mpg.de/fileadmin/inf/ist/js/jquery-ui-1.10.3.custom.min.js?1371199808"
+        type="text/javascript"></script>
+    <script src="https://www.mpi-inf.mpg.de/typo3conf/ext/solr/Resources/JavaScript/EidSuggest/suggest.js"
+        type="text/javascript"></script>
+    <script src="https://www.mpi-inf.mpg.de/fileadmin/inf/res/script/mdetect.js?1503318035" type="text/javascript">
+    </script>-->
+    <!--[if lte IE 7]>
+            <link href="/fileadmin/inf/res/css/core/iehacks.css" rel="stylesheet" type="text/css" />
+            <![endif]-->
+    
+    <meta id="viewport" name="viewport" content="width=device-width">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <!-- BlackBerry, Palm and others use the Handheld Friendly tag -->
+    <meta name="HandheldFriendly" content="true" />
+    <!-- Windows Mobile (and WP7?) use the MobileOptimized and cleartype values -->
+    <meta name="MobileOptimized" content="width" />
+    <!-- Tell Google that we're already on the mobile version -->
+    <!--<link rel="alternate" media="handheld" href="" />-->
+    <!-- Pull the latest version of the JavaScript MobileESP code library from the web site. -->
+    <!-- Included by TYPO3 -->
+    <script type="text/javascript">
+        var time = null;
+        if (isTierTablet) {
+            document.getElementById("viewport").setAttribute("content", "width=device-width, initial-scale=1");
+        }
+        if (isTierIphone) {
+            document.getElementById("viewport").setAttribute("content", "width=device-width");
+        }
+        //-->
+    </script>
+    <!-- Load jQuery for ist_pubman extension -->
+    <script type='text/javascript'>
+        $(function () {
+            $('[class^=ist_toggle]').hide();
+            //toggle content on click
+            $('[class^=detail]').click(function () {
+                var $toggleItem = $('.ist_toggle_' + $(this).attr("class"));
+                var $toggleLink = $(this);
+                $toggleItem.slideToggle(function () {
+                    var $stateSpan = $('<span class="state"></span>');
+                    $toggleItem.is(':visible') ? $stateSpan.text('[hide...]') : $stateSpan.text(
+                        '[more...]');
+                    $toggleLink.children('.state').remove().end().prepend($stateSpan);
+                });
+            }).prepend($('<span class="state">[more...]</span>'));
+        });
+    </script>
+ 
+</head>
+
+<body>
+    <div class="ym-wbox">
+        <div id="main">
+            <!--<div class="ym-column linearize-level-1">-->
+            <div class="ym-column">
+                <div class="ym-clearfix">
+                    <div class="ym-cbox" id="content">
+                        <!--TYPO3SEARCH_begin-->
+                        <div id="c4459" class="box frame frame-default frame-type-text frame-layout-0">
+                            <header class="box_header">
+                                <h1 class="">WebChild: Commonsense Knowledge from the Web USER1
+                                </h1>
+                            </header>
+                            <div class="box_content">
+                                <h3>Overview</h3>
+                                <p>
+                                    <b>WebChild</b>
+                                    &nbsp;is a large collection of commonsense knowledge, automatically extracted
+                                    and disambiguated from Web contents. WebChild contains triples that connect
+                                    nouns with adjectives via fine-grained relations like<span
+                                        style="font-style: italic;">hasShape, hasTaste, evokesEmotion</span>
+                                    , etc. The arguments of these assertions, nouns and adjectives, are
+                                    disambiguated by mapping them onto their proper WordNet senses.
+
+                                </p>
+                                <p>Large-scale experiments demonstrate the high accuracy (more than 80 percent) and
+                                    coverage (more than four million fine grained disambiguated assertions) of
+                                    WebChild.
+                                </p>
+                                <h3>Approach</h3>
+                                <p>Our method is based on semi-supervised Label Propagation over graphs of noisy
+                                    candidate assertions. We automatically derive seeds from WordNet and by pattern
+                                    matching from Web text collections. The Label Propagation algorithm provides us
+                                    with domain sets and range sets for 19 different relations, and with
+                                    confidence-ranked assertions between WordNet senses. </p>
+                            </div>
+                        </div>
+                        <div id="c12775" class="box frame frame-default frame-type-textpic frame-layout-0">
+                            <!--f:if condition=" != 1"-->
+                            <header class="box_header">
+                                <h1 class="">Demo
+                                </h1>
+                            </header>
+                            <!--/f:if-->
+                            <div class="box_content ce-textpic ce-center ce-above">
+                                <div class="ce-bodytext">
+                                    <p>
+                                        <a href="https://gate.d5.mpi-inf.mpg.de/webchild/" target="_blank">Browse</a>
+                                        the WebChild commonsense knowledge.&nbsp;&nbsp;
+                                    </p>
+                                    <p>&nbsp;</p>
+                                    <p>&nbsp;</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="c6839" class="box frame frame-default frame-type-table frame-layout-0">
+                            <header class="box_header">
+                                <h1 class="">Downloads
+                                </h1>
+                            </header>
+                            <div class="box_content">
+                                <table class="ce-table ce-table-bordered">
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                <b>Relation</b>
+                                            </td>
+                                            <td>
+                                                <b>Download-link</b>
+                                            </td>
+                                            <td>
+                                                <b>Size</b>
+                                            </td>
+                                            <td>
+                                                <b>Accuracy</b>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>wordnet wrappers
+
+
+
+
+
+                                            </td>
+                                            <td>
+                                                <a
+                                                    href="http://people.mpi-inf.mpg.de/~ntandon/resources/readme-wordnet-wrappers.html">download</a>
+                                            </td>
+                                            <td>6.3 MB
+
+
+
+
+                                            </td>
+                                            <td>-
+
+
+
+
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>part-whole
+
+
+
+
+
+                                            </td>
+                                            <td>
+                                                <a
+                                                    href="http://people.mpi-inf.mpg.de/~ntandon/resources/readme-partwhole.html">download</a>
+                                            </td>
+                                            <td>6.7 million
+
+
+
+
+                                            </td>
+                                            <td>89
+
+
+
+
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>comparative
+
+
+
+
+
+                                            </td>
+                                            <td>
+                                                <a
+                                                    href="http://people.mpi-inf.mpg.de/~ntandon/resources/readme-comparative.html">download</a>
+                                            </td>
+                                            <td>0.81 million
+
+
+
+
+                                            </td>
+                                            <td>85
+
+
+
+
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>property
+
+
+
+
+
+                                            </td>
+                                            <td>
+                                                <a
+                                                    href="http://people.mpi-inf.mpg.de/~ntandon/resources/readme-property.html">download</a>
+                                            </td>
+                                            <td>-
+
+
+
+
+                                            </td>
+                                            <td>-
+
+
+
+
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>activity
+
+
+
+
+
+                                            </td>
+                                            <td>
+                                                <a
+                                                    href="http://people.mpi-inf.mpg.de/~ntandon/resources/readme-activity.html">download</a>
+                                            </td>
+                                            <td>-
+
+
+
+
+                                            </td>
+                                            <td>-
+
+
+
+
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>spatial
+
+
+
+
+
+                                            </td>
+                                            <td>
+                                                <a
+                                                    href="http://people.mpi-inf.mpg.de/~ntandon/resources/readme-spatial.html">download</a>
+                                            </td>
+                                            <td>-
+
+
+
+
+                                            </td>
+                                            <td>-
+
+
+
+
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <div id="c4461" class="box frame frame-default frame-type-text frame-layout-0">
+                            <header class="box_header">
+                                <h1 class="">Publications
+                                </h1>
+                            </header>
+                            <div class="box_content">
+                                <ul>
+                                    <li>
+                                        <strong>WebChild 2.0: Fine-Grained Commonsense Knowledge
+                                            Distillation</strong>
+                                        <br />
+                                        Niket Tandon, Gerard de Melo, Gerhard Weikum<br />
+                                        In: <em>ACL Demo 2017</em>
+                                        . [<a
+                                            href="http://people.mpi-inf.mpg.de/%7Entandon/papers/tandon-acl2017-demo.pdf"
+                                            target="_blank">PDF</a>
+                                        ]
+                                    </li>
+                                    <br />
+                                    <li>
+                                        <strong>Commonsense in Parts: Mining Part-Whole Relations from the Web and
+                                            Image Tags</strong>
+                                        <br />
+                                        Niket Tandon, Charles Hariman, Jacopo Urbani, Gerhard Weikum, Anna Rohrbach,
+                                        Marcus Rohrbach<br />
+                                        Accepted:&nbsp;
+                                        <em>
+                                            Proc.&nbsp;<a href="http://www.aaai.org/Conferences/AAAI/aaai16.php"
+                                                target="_blank" class="plain">AAAI 2016</a>
+                                        </em>
+                                        . [<a
+                                            href="https://people.mpi-inf.mpg.de/~ntandon/papers/pwkb-aaai2016-tandon.pdf"
+                                            target="_blank">PDF</a>
+                                        ]&nbsp;
+                                    </li>
+                                    <br />
+                                    <li>
+                                        <strong>Mining Activity Commonsense Knowledge from Hollywood
+                                            Narratives</strong>
+                                        <br />
+                                        Niket Tandon, Gerard de Melo, Abir De, Gerhard Weikum<br />
+                                        In:&nbsp;
+                                        <em>
+                                            Proc.&nbsp;<a href="http://cikm-2015.org/" target="_blank"
+                                                class="plain">CIKM 2015</a>
+                                        </em>
+                                        . [<a
+                                            href="https://people.mpi-inf.mpg.de/~ntandon/papers/cikm-15-activity-commonsense.pdf"
+                                            target="_blank">PDF</a>
+                                        ]&nbsp;<br />&nbsp;
+                                    </li>
+                                    <li>
+                                        <strong>Knowledge Extraction from Movie Scripts</strong>
+                                        <br />
+                                        Niket Tandon, Gerard de Melo, Abir De, Gerhard Weikum<br />
+                                        In:&nbsp;
+                                        <em>
+                                            Proc.&nbsp;<a href="http://www2015.it/" target="_blank" class="plain">WWW
+                                                2015</a>
+                                        </em>
+                                        . [<a
+                                            href="https://people.mpi-inf.mpg.de/~ntandon/papers/www-2015-short-knowlywood.pdf"
+                                            target="_blank">PDF</a>
+                                        ]&nbsp;<br />&nbsp;
+                                    </li>
+                                    <li>
+                                        <strong>Smarter Than You Think: Acquiring Comparative Commonsense from the
+                                            Web</strong>
+                                        <br />
+                                        Niket Tandon, Gerard de Melo, Gerhard Weikum (2014)<br />
+                                        Accepted:
+                                        <em>
+                                            &nbsp;<a href="http://www.aaai.org/Conferences/AAAI/aaai14.php"
+                                                target="_blank" class="plain">AAAI 2014</a>
+                                        </em>
+                                        , Canada. [<a
+                                            href="https://people.mpi-inf.mpg.de/~ntandon/papers/aaai-2014-tandon.pdf"
+                                            target="_blank">PDF</a>
+                                        ]&nbsp;<br />&nbsp;
+                                    </li>
+                                    <li>
+                                        <strong>WebChild: Harvesting and Organizing Commonsense Knowledge from the
+                                            Web</strong>
+                                        <br />
+                                        Niket Tandon, Gerard de Melo, Fabian Suchanek, Gerhard Weikum (2014)<br />
+                                        In:&nbsp;
+                                        <em>
+                                            Proc.&nbsp;<a href="http://wsdm-conference.org/2014/" target="_blank"
+                                                class="plain">ACM WSDM 2014</a>
+                                        </em>
+                                        , New York City, USA. [<a
+                                            href="https://people.mpi-inf.mpg.de/~ntandon/papers/webchild-wsdm2014-tandon.pdf"
+                                            target="_blank">PDF</a>
+                                        ]&nbsp;<br />Acceptance rate: 18%.
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div id="c12773" class="box frame frame-default frame-type-text frame-layout-0">
+                            <header class="box_header">
+                                <h1 class="">Linked projects
+                                </h1>
+                            </header>
+                            <div class="box_content">
+                                <p>
+                                    <span style="font-size:14px">
+                                        <a href="http://gerard.demelo.org/webbrain/" target="_blank">WebBrain</a>
+                                        :&nbsp;Joint Neural Learning of Large-Scale Commonsense Knowledge
+                                    </span>
+                                </p>
+                            </div>
+                        </div>
+                        <!--TYPO3SEARCH_end-->
+                        <!-- colpos 0, content elements take 100% -->
+                        <div class="ym-grid linearize-level-1">
+                            <!--TYPO3SEARCH_begin-->
+                            <!--TYPO3SEARCH_end-->
+                            <div class="clearer">
+                                <!-- -->
+                            </div>
+                        </div>
+                        <!-- colpos 1, content elements rendered in 2 columns 33%/66% -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+  <!--  <script
+        src="https://www.mpi-inf.mpg.de/typo3conf/ext/powermail/Resources/Public/JavaScripts/Libraries/jquery.datetimepicker.min.js?1533885551"
+        type="text/javascript"></script>
+    <script
+        src="https://www.mpi-inf.mpg.de/typo3conf/ext/powermail/Resources/Public/JavaScripts/Libraries/parsley.min.js?1533885551"
+        type="text/javascript"></script>
+    <script
+        src="https://www.mpi-inf.mpg.de/typo3conf/ext/powermail/Resources/Public/JavaScripts/Powermail/Tabs.min.js?1533885551"
+        type="text/javascript"></script>
+    <script
+        src="https://www.mpi-inf.mpg.de/typo3conf/ext/powermail/Resources/Public/JavaScripts/Powermail/Form.min.js?1533885551"
+        type="text/javascript"></script>
+    <script
+        src="https://www.mpi-inf.mpg.de/typo3conf/ext/cl_jquery_fancybox/Resources/Public/JavaScript/jquery.mousewheel-3.0.6.pack.js?1503326226"
+        type="text/javascript"></script>
+    <script
+        src="https://www.mpi-inf.mpg.de/typo3conf/ext/cl_jquery_fancybox/Resources/Public/JavaScript/jquery.fancybox.js?1503326226"
+        type="text/javascript"></script>
+    <script
+        src="https://www.mpi-inf.mpg.de/typo3conf/ext/cl_jquery_fancybox/Resources/Public/JavaScript/helper.js?1503326226"
+        type="text/javascript"></script>
+    <script src="https://www.mpi-inf.mpg.de/typo3temp/assets/js/6c0a5b3afe.js?1503646928" type="text/javascript">
+    </script>--->
+</body>
+
+</html>

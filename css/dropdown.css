@@ -1,0 +1,101 @@
+/**
+ * "Yet Another Multicolumn Layout" - YAML CSS Framework
+ *
+ * (en) Horizontal list navigation "hlist"
+ * (de) Horizontale Navigationsliste "hlist"
+ *
+ * @copyright       Copyright 2005-2012, Dirk Jesse
+ * @license         CC-BY 2.0 (http://creativecommons.org/licenses/by/2.0/),
+ *                  YAML-CDL (http://www.yaml.de/license.html)
+ * @link            http://www.yaml.de
+ * @package         yaml
+ * @version         v4.0.2
+ * @revision        $Revision: 743 $
+ * @lastmodified    $Date: 2012-10-23 23:01:14 +0200 (Di, 23 Okt 2012) $
+ */
+
+@media all {
+
+.ym-hlist {
+	width:100%;
+	position:relative;
+	z-index:200;
+	line-height:1em;
+	background:rgba(0, 51, 93, 0.9);
+	min-height:37px;
+	height:auto;
+}
+
+.ym-hlist ul {
+	padding:0;
+	padding-left:20px;
+	margin:0; 
+	list-style: none;
+}
+.ym-hlist ul li {
+	float:left; 
+	position:relative;
+	margin:0;
+	padding:0;
+}
+
+.ym-hlist ul li a,
+.ym-hlist ul li a:visited {
+	display:block;
+	background:transparent;
+	color:#fff;
+	padding: 10px 20px 9px 20px;
+	font-weight:bold;
+	text-transform:uppercase;
+	text-decoration:none;
+	text-shadow: 0 1px 1px rgba(0,0,0,.25);
+	width:auto;
+	white-space:nowrap;
+	}
+.ym-hlist ul li ul {
+	display: none;
+}
+
+.ym-hlist ul li ul li {
+	float: none;
+}
+
+/* specific to non IE browsers */
+.ym-hlist ul li:hover a,
+.ym-hlist ul li a:hover,
+.ym-hlist ul li a.act  {
+	color: #fff;
+	background: rgba(0,0,0,.2);
+	text-decoration:none;
+	outline: 0 none;
+}
+
+
+.ym-hlist ul li:hover ul {
+	display:block; 
+	position:absolute; 
+	top:30px; 
+	left:0; 
+	width:auto;
+	padding-left:0;
+	padding-top:12px;
+	background-image:url(../../static/symbols/bg_nav_sub.png);
+	background-repeat:no-repeat;
+	background-position:left top;
+}
+
+.ym-hlist ul li:hover ul li a {
+	display:block; 
+	padding: 5px 20px;
+	background:#d2d2cf; 
+	color:#424242;
+	font-size:1em;
+	font-weight:normal;
+	text-transform:none;
+	border-bottom:1px solid #fff;
+	}
+.ym-hlist ul li:hover ul li a:hover {
+	background:rgba(101,101,101,1);
+	color:#fff;
+	}
+}

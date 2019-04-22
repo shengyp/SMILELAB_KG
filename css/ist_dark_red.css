@@ -1,0 +1,6 @@
+/* Zum Ueberladen/Ergaenzen der Farbdefinitionen */
+
+.box_content dl.special_format dt {
+        background-image:url(../../static/dark_red/bg_dl_dark_red.gif);
+}
+

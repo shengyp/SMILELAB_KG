@@ -1,0 +1,190 @@
+div.ist_publ_list2 {
+    /* display: table; */
+    font-family: sans-serif;
+    width: 100%;
+    padding: 10px;
+}
+
+div.ist_publ_list2 div.row.group {
+    /* display: table-cell; */
+    /* font-family: Georgia, "Times New Roman", Times, serif; */
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 160%;
+    font-weight: normal;
+    color: #585858;
+    padding: 12px 0 6px 0;
+}
+
+div.ist_publ_list2 div.row div.col1,
+div.ist_publ_list2 div.row div.col2 {
+    /* display: table-cell; */
+    vertical-align: top;
+    border-bottom: 1px dotted #585858;
+}
+
+div.ist_publ_list2 div.row div.col1 {
+    padding: 5px 10px 5px 0;
+    display: table-cell;
+    width: 70px;
+}
+
+div.ist_publ_list2 div.row div.col1 img {
+    width: 100%;
+}
+
+div.ist_publ_list2 div.row div.col2 {
+    padding: 5px 0 5px 0;
+    display: table-cell;
+    font-size: 120%;
+    width: 670px;
+}
+
+div.ist_publ_list2 div.row > div.col2:first-child {
+    display: table-cell;
+    font-size: 120%;
+    width: 740px;
+}
+
+.ist_publ_list2 span.state {
+    cursor: hand;
+    cursor: pointer;
+}
+
+div.ist_publ_list2 div.csl-entry + a,
+div.ist_publ_list2 div.csl-entry + span.accepted + a {
+    clear: both;
+    float: right;
+}
+
+/* kroeper: D2 Style fix for link to project */
+
+.ist_publ_item > a {
+    text-decoration: none;
+}
+
+.ist_publ_item > a > .csl-entry > b {
+    text-decoration: underline;
+}
+
+div.ist_publ_list2 div.csl-entry {
+    display: inline;
+
+}
+
+div.csl-left-margin {
+    float: left;
+    margin-right: 0.3em;
+    position: relative;
+    text-align: right;
+    width: 3em;
+}
+
+div.csl-right-inline {
+    margin: 0 0 0 3.3em;
+    position: relative;
+}
+
+div.ist_publ_list2 div.ist_publ_item_links * {
+    font-size: 93.3%;
+    color: #a2a29e;
+    margin-left: 0em;
+}
+
+div.ist_publ_list2 div.ist_publ_item_numbered {
+    /* font-size: 120%; */
+    margin-left: 3.3em;
+}
+
+div.ist_publ_list2 div.ist_publ_item_links > div {
+    float: left;
+    padding: 3px 5px 5px 0;
+}
+
+div.ist_publ_list2 div.ist_publ_details {
+    background-color: rgb(230, 230, 230);
+    padding: 0 10px 5px 10px;
+    display: block;
+    clear: both;
+}
+
+div.ist_publ_list2 div.ist_publ_details div.title {
+    font-size: 110%;
+    font-weight: bold;
+    padding: 6px 0 3px 0;
+}
+
+div.ist_publ_list2 div.ist_publ_details_link div.links > div {
+    display: list-item;
+    margin-left: 20px;
+}
+
+div.ist_publ_list2 div.ist_publ_details_abstract div.abstract {
+    margin: 0 10px 0 10px;
+}
+
+div.ist_publ_list2 div.ist_publ_details div.subtitle {
+    font-size: 100%;
+    font-weight: bold;
+    padding: 3px 0 3px 0;
+}
+
+div.ist_publ_list2 div.ist_publ_details_export div.export {
+    margin: 0 10px 0 10px;
+}
+
+div.ist_publ_list2 div.ist_publ_details_export div.bibtex {
+    margin: 0 10px 0 10px;
+    font-family: "Courier New", Courier, monospace;
+    font-size: 75%;
+    white-space: pre-line;
+    background-color: rgba(101, 101, 101, 0.16);
+    padding: 10px;
+}
+
+div.ist_publ_list2 div.ist_publ_details_export div.endnote {
+    margin: 0 10px 0 10px;
+    font-family: "Courier New", Courier, monospace;
+    font-size: 75%;
+    white-space: pre-line;
+    background-color: rgba(101, 101, 101, 0.16);
+    padding: 10px;
+}
+
+@media screen and ( max-width: 1150px ) {
+    div.ist_publ_list2 div.row div.col1 {
+        display: table-cell;
+        width: 70px;
+    }
+
+    div.ist_publ_list2 div.row div.col2 {
+        display: table-cell;
+        font-size: 120%;
+        width: 520px;
+    }
+
+    div.ist_publ_list2 div.row > div.col2:first-child {
+        display: table-cell;
+        font-size: 120%;
+        width: 590px;
+    }
+
+}
+
+@media screen and ( max-width: 1000px ) {
+    div.ist_publ_list2 div.row div.col1 {
+        display: table-cell;
+        width: 70px;
+    }
+
+    div.ist_publ_list2 div.row div.col2 {
+        display: table-cell;
+        font-size: 120%;
+        width: 470px;
+    }
+
+    div.ist_publ_list2 div.row > div.col2:first-child {
+        display: table-cell;
+        font-size: 120%;
+        width: 540px;
+    }
+}

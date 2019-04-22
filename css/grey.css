@@ -1,0 +1,48 @@
+#breadcrumb {
+	background-color:#b5b5b5;
+	background-color:#a9a9a9;
+	}
+	
+.ym-hlist ul li:hover ul li a {
+	background-color:#d4d4d4; 
+	}
+.ym-hlist ul li:hover ul li a:hover {
+	background-color:#545454;
+	}
+#nav_department {
+	background-color:#d4d4d4;
+}
+
+#nav_department h1.nav_title,
+.box_header {
+	background-color:#a9a9a9;
+	}
+
+#navleft  ul li a.act {
+	background-color:#d4d4d4;
+  }
+
+#navleft  ul li a.act {
+	background-color:#b5b5b5;
+	background-color:#a9a9a9;
+}
+  
+#navleft .toggleMenu,
+#navleft  ul li a:hover,
+#navleft  ul li a.act:hover,
+#navleft  ul li a.cur { 
+	background-color:#545454;
+}
+
+.box_content .morelink a {
+	background-color:#c7c7c7;
+	}
+	
+#footer {
+	background-color:#c7c7c7;
+	}
+	
+#footer .box_header {
+	background-color:#b5b5b5;
+	background-color:#a9a9a9;
+	}

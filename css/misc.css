@@ -1,0 +1,790 @@
+body {
+  color: #333333;
+}
+
+a {
+  color: #333333;
+}
+
+#lma {
+    text-decoration: none;
+}
+
+/* kroeper: Extra Box unter Department Navigation */
+
+div#nav_department_infobox .box {
+   margin: 0 0 20px 0;
+}
+
+/* amerkel: extra autocolumn fuer people-Seiten */
+p.autocolumns_people { 
+    -moz-column-width: auto; 
+    -webkit-column-width: auto; 
+    column-width: auto; 
+    -moz-column-gap: 2em; 
+    -webkit-column-gap: 2em; 
+    column-gap: 2em;
+    white-space: nowrap;
+    -webkit-column-count: 2;
+    -moz-column-count: 2;
+    column-count: 2;
+}
+
+ul.autocolumns_people { 
+    list-style-type: none;
+    -moz-column-width: auto; 
+    -webkit-column-width: auto; 
+    column-width: auto; 
+    -moz-column-gap: 2em; 
+    -webkit-column-gap: 2em; 
+    column-gap: 2em;
+    white-space: nowrap;
+    -webkit-column-count: 2;
+    -moz-column-count: 2;
+    column-count: 2;
+
+}
+/* ende autocolumn people */
+
+/* amerkel Workaround fuer Bilder von D4 */
+.csc-textpic-intext-left > div > div > div > figure > img {
+    width: 180px;
+    height: 240px;
+}
+/* Ende Workaround */
+
+/* kein Workaround fuer Bilder von D4 */
+.frame-image-180x240 img {
+    width: 180px;
+    height: 240px;
+}
+
+/* Boxen-css fuer grid (mehrere Boxen nebeinander) angepasst (People Homepage, Softwareliste ...) */
+
+.ym-gbox .box_no_dist {
+   margin: 0 10px 20px 10px;
+   overflow:hidden;
+}
+
+.ym-gbox .box_no_right_dist {
+   margin: 0 0 20px 10px;
+   overflow:hidden;
+}
+
+.ym-gbox .box_no_right_bottom_dist {
+   margin: 0 0 0 10px;
+   overflow:hidden;
+}
+
+.ym-gbox .box_no_left_dist {
+   margin: 0 10px 20px 0;
+   overflow:hidden;
+}
+
+.ym-gbox .box_no_left_bottom_dist {
+   margin: 0 10px 0 0;
+   overflow:hidden;
+}
+
+.ym-gbox .box {
+   margin: 0 10px 20px 10px;
+   overflow:hidden;
+}
+
+.ym-gbox.box_fixed_height {
+    height: auto !important;
+    min-height: 220px;
+    overflow: hidden;
+}
+
+.box_fixed_height .box_content {
+    min-height: 160px;
+    /* height: auto !important; */
+    height: 160px;
+}
+
+.yagospecial .box_fixed_height .box_content {
+    height: unset;
+}
+
+.ym-gbox .box_content {
+    min-height: 220px;
+}
+
+.ym-hlist ul li:hover ul {
+    white-space: unset;
+    width: auto;
+}
+
+.ym-hlist ul li ul li {
+     width: 175%;
+}
+
+.ym-hlist ul li a,
+.ym-hlist ul li a:visited {
+	white-space:unset;
+}
+
+/* FSC Boxen*/
+
+.frame-space-after-box-wo-bo-di {
+    margin:0 10px 0 10px;
+}
+
+.frame-space-after-box-wo-bo-di > .box {
+    margin:0;
+}
+
+.ym-gbox .frame-space-after-box-wo-ri-di {
+    margin:0 0 20px 10px;
+}
+
+.frame-space-after-box-wo-ri-di {
+    margin:0 0 20px 10px;
+}
+
+.frame-space-after-box-wo-ri-di > .box {
+    margin:0;
+}
+
+.ym-gbox .frame-space-after-box-wo-le-di {
+    margin:0 10px 20px 0px;
+}
+
+.frame-space-after-box-wo-le-di {
+    margin:0 10px 20px 0px;
+}
+
+.frame-space-after-box-wo-le-di > .box {
+    margin:0;
+}
+
+/* Department Header ohne Icons */
+
+#department_symbol {
+    background: none repeat scroll 0 0 rgba(0, 0, 0, 0.5);
+    color: #FFFFFF;
+    font-size: 30px;
+    font-weight: lighter;
+    height: 86px;
+    line-height: 86px;
+    text-align: center;
+    width: 86px;
+}
+
+#department_name {
+    background-image: none;
+    color: #FFFFFF;
+    display: inline-block;
+    font-family: Georgia,Times New Roman,Times,serif;
+    font-size: 32px;
+    height: auto;
+    top: 50%;
+    vertical-align: middle;
+}
+
+
+/* Neue Departmentnavigation */
+
+#nav_department ul li a {
+    color: #424242;
+    display: block; 
+    font-weight: bold;
+    height: 86px;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    width: auto;
+}
+
+/* #nav_department span.department_number{
+    background: none repeat scroll 0 0 #A9A9A9;
+    color: #FFFFFF;
+    display: block;
+    float: left;
+    font-size: 30px;
+    font-weight: lighter;
+    height: 86px;
+    line-height: 86px;
+    text-align: center;
+    vertical-align: super;
+    width: 84px;
+} */
+
+#nav_department span.department_number,
+#nav_department div.department_number{
+    background: none repeat scroll 0 0 #A9A9A9;
+    color: #FFFFFF;
+    display: table-cell !important;
+    /* float: left; */
+    font-size: 30px;
+    font-weight: lighter;
+    height: 86px;
+    text-align: center;
+    vertical-align: middle;
+    width: 84px;
+}
+
+
+#nav_department .class1 .department_number{
+   border-right: 7px solid #A50B0F;
+}
+
+#nav_department .class2 .department_number{
+   border-right: 7px solid #DB6410;
+}
+
+#nav_department .class3 .department_number{
+   border-right: 7px solid #316827;
+}
+
+#nav_department .class4 .department_number{
+   border-right: 7px solid #0083A1;
+}
+
+#nav_department .class5 .department_number{
+   border-right: 7px solid #88126E;
+}
+
+#nav_department .class6 .department_number{
+   border-right: 7px solid #A50B0F;
+}
+
+#nav_department .class7 .department_number{
+   border-right: 7px solid #A50B0F;
+}
+
+#nav_department .class8 .department_number{
+   border-right: 7px solid #F0AE08;
+}
+
+#nav_department .class9 .department_number{
+   border-right: 7px solid #758E24;
+}
+
+#nav_department ul li.class1,
+#nav_department ul li.class2,
+#nav_department ul li.class3,
+#nav_department ul li.class4,
+#nav_department ul li.class5,
+#nav_department ul li.class6,
+#nav_department ul li.class7,
+#nav_department ul li.class8,
+#nav_department ul li.class9 {
+    background-image: none;
+    background-position: left top;
+    background-repeat: no-repeat;
+}
+
+#nav_department span.department_name,
+#nav_department div.department_name {
+/*    float: left; */
+    padding: 0 10px 0 1em;
+    width: 130px;
+    margin: 0em 1em 0;
+    text-align: left;
+    display: table-cell !important;
+    vertical-align: middle;
+    height: 86px;
+}
+/* ende neue Departmentnav */
+
+
+/* neue Department-Übersicht */
+div.box div.box_header.department_overview {
+    padding-left: 0;
+    background-repeat:no-repeat;
+}
+
+.box_header.department_overview h1 {
+    padding: 0 0 8px 0;
+}
+
+.box_header.department_overview div.department_number {
+    display: table-cell;
+    font-size: 30px;
+    height: 86px;
+    text-align: center;
+    vertical-align: middle;
+    width: 86px;
+    color: white;
+}
+
+.box_header.department_overview div.department_title {
+    display: table-cell;
+    height: 86px;
+    vertical-align: middle;
+    padding-left: 8px;
+    font-size: 16px;
+}
+
+div.box div.box_header.department_overview a.department_header {
+  text-decoration: none;
+}
+
+div.box div.box_header.department_overview h1 {
+    /* font-family: Georgia, Times New Roman, Times, serif; 
+    font-size:200%; */
+}
+
+div.box div.box_content.department_overview table td:first-child + td {
+  width:30%;
+}
+
+/* ende neue Department-Übersicht*/
+span.csc-sword, span.results-highlight {
+  background-color:rgba(0, 51, 93, 0.9);
+  color: white;
+  -moz-border-radius:3px 3px 3px 3px;
+  border-radius:3px 3px 3px 3px;
+}
+
+/* Fixing footer margin */
+div#footer .box { margin: 0; }
+
+/* Fixing footer padding */
+div#footer div.box_content { padding:20px 0 20px 0;}
+
+/* Link special menu */
+.box_content dl.special_format dt a {
+    text-decoration: none;
+}
+
+.box_content dl.special_format a {
+    text-decoration: none;
+}
+
+.box_content dl.special_format dt {
+    background-image: url("../../static/grey/bg_dl_std.gif");
+    background-position: 15px center;
+    background-repeat: no-repeat;
+    padding-left: 8.333%;
+}
+
+/* tt_address single */
+
+div.tt_address_single div.picture {
+  float:right;
+}
+
+
+div.tt_address_single div.description {
+  float:left;
+}
+
+
+.clearafter:before, .clearafter:after {content:""; display:table;}
+.clearafter:after {clear:both;}
+
+div.tt_address_single:before, div.tt_address_single:after {content:""; display:table;}
+div.tt_address_single:after {clear:both;}
+
+
+div.tt_address_single h2 {
+  margin-left:70px; 
+}
+
+div.tt_address_single  dt {
+  float: left;
+  clear: left;
+  width: 60px;
+  text-align: right;
+  font-weight: bold;
+}
+
+div.tt_address_single  dt:after {
+  content: ":";
+}
+
+div.tt_address_single  dd {
+  margin: 0 0 0 70px;
+  padding: 0 0 0.5em 0;
+}
+
+div.tt_address_single  dl {
+  margin: 0 0 0 0;
+  padding: 0 0 0 0;
+}
+
+/* amerkel dl->a darf in csc-menu-1 kein underline haben*/
+dl.csc-menu-1 a {
+  text-decoration:none
+}
+
+/* amerkel test new table layout */
+td.email, th.email {
+  width:16%;
+  color:#333333;
+  background-color:#CCCCC5;
+  text-align:left;
+}
+
+td.department, th.department {
+    border-left: 1px solid #A2A29E;
+    width: 11%;
+}
+
+td.phone, th.phone {
+    border-left: 1px solid #A2A29E;
+    width: 14%;
+}
+
+td.room, th.room {
+    border-left: 1px solid #A2A29E;
+    width: 8%;
+}
+
+td.name, th.name {
+     width: 28%;
+}
+/* end test */
+
+/* Fixing tt_address all list */
+
+div.box_ttaddress dl.ttaddress_all_list dd a:link {color: white;}
+div.box_ttaddress dl.ttaddress_all_list dd a:visited {color: white;}
+div.box_ttaddress dl.ttaddress_all_list dd a:active {color: white;}
+div.box_ttaddress dl.ttaddress_all_list dd a:hover {color: white;}
+
+/* Removing too much space on top for first element in box_content */
+div.box_content h1:first-child,
+div.box_content h2:first-child,
+div.box_content h3:first-child,
+div.box_content h4:first-child,
+div.box_content h5:first-child,
+div.box_content h6:first-child,
+div.box_content  p:first-child,
+div.box_content ul:first-child {
+margin-top: 0px;  
+}
+
+/* ist address list fix */
+.ist_address_list_filter {vertical-align:middle;}
+
+.ist_address_list_filter a.abc_letter,
+.ist_address_list_filter span.abc_letter {
+  display:inline-block;
+  background:rgba(0, 51, 93, 1);
+  color:#fff;
+  width:1em;
+  /*line-height:30px;*/
+  /*padding:0 4px 0 5px;*/
+  padding: 0.2em 0.3em;
+  border-right:1px solid #fff;
+  border-bottom:1px solid #fff;
+  text-align:center;
+  font-size:170%;
+  text-decoration:none;
+}
+
+.ist_address_list_filter a.act,
+.ist_address_list_filter span.act {
+  /*background-color:#173145;*/
+  /*line-height:40px;*/
+  font-size:250%;
+}
+
+div.ist_address_letters {
+  vertical-align: bottom;
+  position:relative;
+}
+
+div.ist_address_letters a {
+  background:rgba(0, 51, 93, 1);
+  color:#fff;
+  padding: 4px 8px;
+  text-align:center;
+  font-size:20px;
+  text-decoration:none;
+  text-align: center;
+  vertical-align:middle;
+  line-height: 24px;
+  display:block;
+  float:left;
+  margin-top:20px;
+  /*margin-right:1.3px;*/
+  border-right: 1px solid white;
+  width:18px;
+}
+
+div.ist_address_letters a.act {
+  font-size:32px;
+  margin-top:2px;
+  padding: 4px 10px;
+  line-height:42px;
+  width: 32px;
+}
+
+/* Fix link color in box_header */
+
+.box_header a {
+  color:white;
+}
+
+/* Sitemap */
+
+div.box_content ul.sitemap {
+  list-style-type: none;
+  font-family: Georgia, Times New Roman, Times, serif;
+  font-size:160%;
+  margin-left:0;
+}
+
+div.box_content ul.sitemap a:hover {
+  text-decoration:underline;
+}
+
+div.box_content ul.sitemap a {
+  text-decoration:none;
+}
+
+div.box_content ul.sitemap li {
+  margin-left:0;
+}
+
+div.box_content ul.sitemap > li > ul > li {
+  -webkit-column-break-inside:avoid;
+  -moz-column-break-inside:avoid;
+  -o-column-break-inside:avoid;
+  -ms-column-break-inside:avoid;
+  column-break-inside:avoid;
+}
+
+div.box_content ul.sitemap > li > ul > li > a {
+  font-weight: bold;
+  color: black;
+}
+
+div.box_content ul.sitemap > li > ul  {
+  -moz-column-width: 18em; -webkit-column-width: 18em; column-width: 18em;
+  -moz-column-gap: 2em; -webkit-column-gap: 2em; column-gap: 2em;
+}
+
+div.box_content ul.sitemap ul {
+  list-style-type: none;
+  font-size: 85%;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 1% 2%;
+}
+
+div.box_content ul.sitemap > li > a {
+  border-bottom: 2px solid black;
+  display:block;
+  text-decoration: none;
+  padding: 1%;
+  color: black;
+}
+
+
+#footer .ym-col1 {
+    width: 100%;
+    text-align: right;
+}
+  #footer .ym-col3,
+  #footer .ym-col2 {
+    width: unset;
+  }
+
+@media screen and ( max-width: 1150px ) {
+    .ym-hlist {
+	height: 81px;
+    }
+    .ym-hlist ul li {
+	width: 20%;
+    }
+
+    .ym-hlist ul li:hover ul {
+	white-space: unset;
+	width: auto;
+	z-index: 105;
+    }
+
+    .ym-hlist ul li ul li {
+	width: 100%;
+    }
+
+}
+
+/* Fix the main nav responsively */
+@media screen and ( max-width: 1000px ) {
+
+    .ym-hlist {
+	height: 54px;
+    }
+
+    .ym-hlist ul li:hover ul {
+	white-space: unset;
+	width: auto;
+    }
+    
+    .ym-hlist ul li ul li {
+	width: 100%;
+    }
+
+    .ym-hlist ul li {
+	width: 20%;
+    }
+    
+    #nav_department ul li a{
+	width:auto;
+    } 
+    #nav_department ul li span.department_name {
+	width:auto;
+    }
+    /*#nav_department ul li a,*/
+    #navleft ul li a {
+    /*padding: 0.8em;*/
+    }
+    #navleft ul {
+	width:auto;
+    }
+    div#navleft,
+    div#nav_department {
+/*	font-size:130%; */
+	width:auto;
+	margin-right:10px;
+    }
+    
+    #header #search {
+	display:none;
+    }
+    
+}
+
+
+
+/* Fix floating/responsiveness of little boxes */
+/* Remove fix: Margins gone between boxes */
+/* div#main div.ym-cbox div.box {
+  margin:0;
+} */
+
+.ym-gbox {
+   padding: 0;
+   margin: 0;
+}
+
+
+@media screen and ( max-width: 1000px ) {
+  div.ym-gbox {
+    padding-left:0px;
+  }
+  div.ym-gbox.box_fixed_height {
+    min-height:0;
+  }
+  div.ym-gbox.box_fixed_height div.box_content {
+    min-height:0;
+  }
+  .ym-gbox .box_no_dist {
+     margin: 0 10px 20px 0px;
+  }
+
+  .ym-gbox .box_no_right_dist {
+     margin: 0 10px 20px 0px;
+  }
+
+  .ym-gbox .box_no_right_bottom_dist {
+     margin: 0 10px 0 0px;
+  }
+
+  .ym-gbox .box_no_left_dist {
+     margin: 0 10px 20px 0;
+  }
+
+  .ym-gbox .box_no_left_bottom_dist {
+     margin: 0 10px 0 0;
+  }
+
+  .ym-gbox .box {
+     margin: 0 10px 20px 0px;
+  }
+}
+
+/* draufer responsive solr */
+@media screen and ( max-width: 1000px ) {
+  div.tx-solr div#tx-solr-search-functions {
+    float:none;
+    width:auto;
+  }
+
+  div.tx-solr div#tx-solr-search {
+    margin:0;
+  }
+}
+
+/* solr fixes */
+div.tx-solr div#tx-solr-search div.tx-solr-search-form-errors {
+  padding:20px;
+}
+
+div.tx-solr div#tx-solr-search div.tx-solr-search-form-errors ul.tx-solr-search-form-error-list {
+  color:red;
+  font-weight:bold;
+}  
+
+div.tx-solr div#tx-solr-search div.tx-solr-search-no-results {
+  padding:20px;
+}
+
+/*draufer code boxes */
+
+div.box_content code,
+div.box_content pre {
+  /*border: dashed 1px grey;
+  padding: 1px;
+  margin: 1px;
+  background-color: */
+  -mox-border-radius: 3px;
+  border-radius:3px;
+  background-color: #e6e6e4;
+  padding:0 5px 0 5px;
+  overflow-x: auto;
+  white-space: pre;
+  word-wrap:normal;
+}
+
+  p.autocolumns_people, ul.autocolumns_people { 
+      column-count: 1;
+      -moz-column-count: 1;
+      -webkit-column-count: 1;
+  }
+
+/* kroeper responsive top menu and fontsize department navigation */
+@media screen and ( max-width: 1000px ) {
+  .ym-hlist ul li a, 
+  .ym-hlist ul li a:visited {
+     white-space: normal;
+  }
+}
+
+/* amerkel responsive design for headlines */
+@media screen and ( max-width: 1000px ) {
+  .box_header h1 {
+     white-space: normal;
+  }
+}
+
+/* Images */
+@media screen and ( max-width: 1150px ) and ( min-width: 1000px ) {
+    .ce-gallery[data-ce-columns="4"] .ce-column {
+	width: 33%;
+    }
+}
+
+@media screen and ( max-width: 1000px ) {
+    .ce-gallery[data-ce-columns="4"] .ce-column {
+	width: 50%;
+    }
+}
+
+@media screen and ( max-width: 1150px ) {
+  .box_header h1 {
+     white-space: normal;
+  }
+}
+
+@media screen and ( max-width: 1000px ) {
+   .frame-space-after-box-wo-bo-di {
+       margin:0 10px 0 0px;
+   }
+}

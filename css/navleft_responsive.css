@@ -1,0 +1,149 @@
+@media screen {
+
+
+/****************************************/
+/* navleft */
+/****************************************/
+
+#navleft {
+	width:100%;
+	margin-bottom:20px;
+	position:relative;
+}
+
+#navleft .toggleMenu {
+    display:  none;
+	background-color:rgba(165, 11, 15, 1);
+    padding: 10px 15px;
+    color: #fff;
+}
+
+#navleft  ul {
+	list-style-type:none;
+	margin:0;
+	padding:0;
+	border-bottom:1px solid #a2a29e;
+  }
+
+#navleft  ul ul {
+	border-bottom:0px none;
+  }
+
+/****************************************/
+/* navleft 1.Ebene */
+/****************************************/
+
+#navleft  ul li {
+	margin: 0;
+	padding: 0;
+	line-height:1em;
+	position:relative;
+
+	
+  }
+
+#navleft ul li a {
+	display:block;
+	padding:8px 20px;
+	background:rgba(101, 101, 101, 0.16);
+	background-color:#d1d1d1;
+	border-top:1px solid #a2a29e;
+	font-size:1em;
+	font-weight:bold;
+	color:#585858;
+	text-decoration: none;
+	/*border-left: 1px solid #a2a29e;*/
+	/*border-right: 1px solid #a2a29e;*/
+  }
+ 
+#navleft  ul li a:hover,
+#navleft  ul li a.act:hover,
+#navleft  ul li a.cur {
+	background:rgba(101, 101, 101, 1);
+	color:#fff;
+  }
+  
+#navleft  ul li a.act {
+	background:rgba(101, 101, 101, 1);
+	color:#fff;
+  }
+  
+
+/****************************************/
+/* navleft 2.Ebene */
+/****************************************/
+
+#navleft  ul li ul {
+	/*padding-left:10px;*/
+	/*border-bottom: 5px solid #a2a29e;*/
+  }
+
+#navleft  ul li ul li {
+	padding-left:10px;
+	/*border-left: 10px solid #a2a29e;*/
+  }
+  
+#navleft ul li ul li a {
+	/*padding:4px 20px;*/
+	/*border-left: 20px solid #a2a29e;*/
+	line-height:1.32em;
+  }
+
+#navleft  ul li ul li a.act {
+  }
+
+/****************************************/
+/* navleft 3. Ebene      */
+/****************************************/
+
+#navleft  ul li ul li ul li {
+  }
+
+#navleft ul li ul li ul li a {
+	padding:5px 15px;
+	font-size:90%;
+	font-weight:normal;
+  }
+
+#navleft  ul li ul li ul li a.act {
+  }
+
+/****************************************/
+/* navleft 4. Ebene      */
+/****************************************/
+
+#navleft  ul li ul li ul li ul li {
+  }
+
+  
+#navleft ul li ul li ul li ul li a {
+  }
+
+#navleft  ul li ul li ul li ul li a.act {
+  }
+
+}
+
+@media screen and ( max-width: 1000px ) {
+
+#nav_department {
+	width:610px;
+  }
+
+#navleft {
+	position:relative;
+	margin-bottom:10px;
+}
+	
+#navleft ul {
+	position:relative;
+	width:610px;
+	overflow:visible;
+	z-index:100;
+  }
+  
+#navleft ul ul {
+  }
+ 	
+
+}
