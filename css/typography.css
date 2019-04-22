@@ -248,7 +248,11 @@
     background:transparent;
     text-decoration:underline;
   }
-
+ a:link,
+ a:visited {
+    color: #1279f8;
+    text-decoration: none;
+}
   a:active { outline: none; }
 
   /* (en) maximum constrast for tab focus - change with great care */
